@@ -1,0 +1,37 @@
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Configuration and secrets
+.env
+
+# Large zip archives
+*.zip
+*.rar
+*.7z
+
+# Python caching
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating system files
+Thumbs.db
+.DS_Store
+
+# Local session files & dynamic logs
+runtime/audio/
+runtime/history/
+
+# MediaPipe dynamic download (re-downloaded automatically on run)
+runtime/hand_landmarker.task
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
