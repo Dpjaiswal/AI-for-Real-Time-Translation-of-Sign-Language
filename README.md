@@ -1,4 +1,4 @@
-# 🤟 AI for Real-Time Translation of Sign Language
+# AI for Real-Time Translation of Sign Language
 
 Real-time Sign Language Translation System built with **Python**, **Flask**, **OpenCV**, **MediaPipe**, **scikit-learn**, and **Edge-TTS**.
 
