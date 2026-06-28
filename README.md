@@ -64,6 +64,34 @@ graph TD
 
 ---
 
+## 📊 Data Model
+
+The following ER Diagram shows the conceptual structure of the session storage, defining how translation histories and states are stored per session:
+
+```mermaid
+erDiagram
+    SESSION_STATE {
+        string session_id PK
+        string transcript
+        string last_candidate
+        int candidate_count
+        float last_commit_time
+    }
+    TRANSLATION_ENTRY {
+        string mode
+        string input_text
+        string output_text
+        string timestamp
+        float confidence
+        string audio_url
+        string metadata
+    }
+    
+    SESSION_STATE ||--o{ TRANSLATION_ENTRY : "stores history"
+```
+
+---
+
 ## 📂 Project Structure
 
 ```text
